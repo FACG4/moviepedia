@@ -1,47 +1,63 @@
-/* general styels*/
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-
-}
-
-h1 {
-
-}
-
-h2 {
+body{background-image: url('http://www.lypowystudio.com/assets_d/52045/web_media/sm_bbb_background_film_110.jpg');
+background-size: cover;
 
 }
 
 
-/* ===================================== */
-/* search box styles (start page) */
-/* ===================================== */
+.header{
+  font-size: 50px;
+  text-align: center;
+  color: #ce9a56;
+
+}
 
 
+.section1{
+
+  text-align: center;}
 
 
+.search-btn{
+background-color :#edc795;
+padding: 5px 10px;
+border-radius: 6px;
+color: #3a2104;
+font-weight: bold;
 
-/* ===================================== */
-/* styles of dynamicly added sections */
-/* ===================================== */
-
-
-
-/* movies db section */
-
-
-
-/* wikipedia section */
+}
 
 
+.search-btn:hover{
+  color: white;
+  background-color: #c69049;
 
-/* extra features */
+}
+
+.search-query{
+  border-color: #edc795;
+  width: 170px;
+  height: 20px;
+}
 
 
+.search-results{
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 10px;
+
+}
+.image1{
+  margin-top: 50px;
+  border: 1px solid;
+ }
 
 
-/* media queries */
+.title{color: #ce9a56; font-weight: 900;}
+
+.span1{color: #e5ceb3;}
+.span2{color: #e5ceb3;}
+
+.overview{color: #845a29;
+font-weight: bold;
+text-decoration: underline;
+}
