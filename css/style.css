@@ -1,31 +1,26 @@
-body{background-image: url('http://www.lypowystudio.com/assets_d/52045/web_media/sm_bbb_background_film_110.jpg');
-background-size: cover;
-
+body {
+  background-image: url('http://www.lypowystudio.com/assets_d/52045/web_media/sm_bbb_background_film_110.jpg');
+  background-size: cover;
 }
 
-
-.header{
+.header {
   font-size: 50px;
   text-align: center;
   color: #ce9a56;
-
 }
 
 
-.section1{
-
-  text-align: center;}
-
-
-.search-btn{
-background-color :#edc795;
-padding: 5px 10px;
-border-radius: 6px;
-color: #3a2104;
-font-weight: bold;
-
+.section1 {
+  text-align: center;
 }
 
+.search-btn{ 
+  background-color :#edc795;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #3a2104;
+  font-weight: bold;
+}
 
 .search-btn:hover{
   color: white;
