@@ -66,7 +66,7 @@ addListener('.search-btn', 'click', function(e) {
       const image = document.createElement("img");
       image.setAttribute('class', 'image1');
       image.setAttribute('alt', 'hello, this is movie poster :)');
-      image.src = 'http://image.tmdb.org/t/p/w185//' + data.poster_path;
+      image.src = 'https://image.tmdb.org/t/p/w185//' + data.poster_path;
 
 
       //breaks
