@@ -4,17 +4,19 @@ body {
 }
 
 .header {
-  font-size: 50px;
+  font-size: 75px;
   text-align: center;
   color: #ce9a56;
+  font-family: 'Kaushan Script';
+  height: 70px;
 }
 
 
 .section1 {
   text-align: center;
-}
+ }
 
-.search-btn{ 
+.search-btn{
   background-color :#edc795;
   padding: 5px 10px;
   border-radius: 6px;
@@ -30,9 +32,26 @@ body {
 
 .search-query{
   border-color: #edc795;
-  width: 170px;
+  width: 230px;
   height: 20px;
+  border-radius:6px;
+  padding: 3px;
+  color: #664416;
 }
+
+::placeholder {
+    color:  #664416;
+    opacity: 1; /* Firefox */
+}
+
+
+.search-query:hover{
+  border-color: #634a28;
+  cursor: pointer;
+}
+
+
+
 
 
 .search-results{
