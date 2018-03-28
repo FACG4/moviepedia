@@ -65,6 +65,7 @@ addListener('.search-btn', 'click', function(e) {
       //image
       const image = document.createElement("img");
       image.setAttribute('class', 'image1');
+      image.setAttribute('alt', 'hello, this is movie poster :)');
       image.src = 'http://image.tmdb.org/t/p/w185//' + data.poster_path;
 
 
@@ -79,7 +80,7 @@ addListener('.search-btn', 'click', function(e) {
       divLeft = document.createElement('div');
       divLeft.setAttribute('class', 'divLeft');
       divLeft.appendChild(image);
-      result.appendChild(divLeft);
+       result.appendChild(divLeft);
 
 
       //divRight
