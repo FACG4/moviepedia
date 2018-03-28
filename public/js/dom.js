@@ -98,8 +98,41 @@ addListener('.search-btn', 'click', function(e) {
 
     }
 
+    // const movieInfo = getMovieInfo(response);
+  var header = response.results[0].title;
+  console.log(header.replace(/\s+/g, '+'));
+  
+  // searchInput.value;
+  const giffy_url = "http://api.giphy.com/v1/gifs/search?q=" + header.replace(/\s+/g, '+') + "&api_key=BslWn4QgtcM8iJuzNm0jUNFvF4VqFQmU&limit=4";
+  console.log(giffy_url);
+  
+  app.fetch(giffy_url, (response2) => {
+      const giphy = select('#giffy');
+      console.log('giphy');
+      
+      giphy.innerHTML ="";
+      const objects = response2.data;
+      const img_urls =  objects.map((object) => {
+          const gif = document.createElement('img');            
+          gif.src = object.images.fixed_height_downsampled.url;
+          console.log(gif);
+          
+          giphy.appendChild(gif);
+          // return object.images.downsized_medium.url
+      })
+  });
 
-  })
+
+
+
+
+  });
+
+
+  
+
+
+
 
 })
 
