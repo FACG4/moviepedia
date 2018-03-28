@@ -12,7 +12,7 @@ body {
 }
 
 
-.section1 {
+.section1, .form {
   text-align: center;
  }
 
@@ -88,3 +88,13 @@ text-decoration: underline;
   width: 700px;
 padding-right: 50px;
 margin-right: 100px;}
+
+.giffy {
+  margin-top: 10px;
+}
+.giffy img {
+  display: inline-block;
+  width: 24%;
+  height: 200px;
+
+}
