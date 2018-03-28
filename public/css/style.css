@@ -39,15 +39,17 @@ body {
   margin-left: 200px;
   margin-right: 200px;
   margin-top: 10px;
-
 }
+
+
 .image1{
   margin-top: 50px;
   border: 1px solid;
+  margin-right: 10px;
  }
 
 
-.title{color: #ce9a56; font-weight: 900;}
+.title{color: #ce9a56; font-weight: 900; }
 
 .span1{color: #e5ceb3;}
 .span2{color: #e5ceb3;}
@@ -56,3 +58,14 @@ body {
 font-weight: bold;
 text-decoration: underline;
 }
+
+.result{display: flex; justify-content: flex-end;}
+
+
+
+.divLeft{text-align:left; }
+.divRight{padding-top: 26px;
+  text-align:left;
+  width: 700px;
+padding-right: 50px;
+margin-right: 100px;}
