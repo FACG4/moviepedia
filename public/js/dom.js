@@ -103,7 +103,7 @@ addListener('.search-btn', 'click', function(e) {
   console.log(header.replace(/\s+/g, '+'));
   
   // searchInput.value;
-  const giffy_url = "http://api.giphy.com/v1/gifs/search?q=" + header.replace(/\s+/g, '+') + "&api_key=BslWn4QgtcM8iJuzNm0jUNFvF4VqFQmU&limit=4";
+  const giffy_url = "https://cors-anywhere.herokuapp.com/http://api.giphy.com/v1/gifs/search?q=" + header.replace(/\s+/g, '+') + "&api_key=BslWn4QgtcM8iJuzNm0jUNFvF4VqFQmU&limit=4";
   console.log(giffy_url);
   
   app.fetch(giffy_url, (response2) => {
