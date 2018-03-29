@@ -1,16 +1,52 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-image: url('http://www.lypowystudio.com/assets_d/52045/web_media/sm_bbb_background_film_110.jpg');
+  background-image: url('../image/bg.jpg');
   background-size: cover;
+  background-attachment: fixed;
+  color: #3a2104;
+  min-height: 100vh;
 }
 
 .header {
-  font-size: 50px;
+  font-size: 75px;
   text-align: center;
-  color: #ce9a56;
+  /* color: #ce9a56; */
+  font-family: 'Kaushan Script', 'Times New Roman', Times, serif;
+  height: 70px;
 }
 
 
-.section1 {
+.movie-info, .form {
   text-align: center;
 }
 
@@ -20,6 +56,8 @@ body {
   border-radius: 6px;
   color: #3a2104;
   font-weight: bold;
+  border: none;
+  height: 30px;
 }
 
 .search-btn:hover{
@@ -30,29 +68,120 @@ body {
 
 .search-query{
   border-color: #edc795;
-  width: 170px;
-  height: 20px;
+  width: 230px;
+  height: 30px;
+  border-radius:6px;
+  padding: 3px 3px 3px 10px;
+  color: #664416;
+}
+
+::placeholder {
+  color:  #664416;
+  opacity: 1; /* Firefox */
+}
+
+.search-query:hover {
+  border-color: #634a28;
+  cursor: pointer;
+}
+
+.movie-info {
+  margin: 20px 0;
+}
+
+.movie-info h3 {
+  font-size: 1.5em;
 }
 
 
-.search-results{
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-top: 10px;
-
+.search-results {
+  float: right;
+  width: 60%;
+  text-align: left;
 }
-.image1{
+
+.search-results p:last-child {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.search-results p:last-of-type,
+.search-results h3:last-of-type {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.movie-title {
+  margin: 10px 0;
+  font-size: 50px;
+}
+
+.summary {
+  width: 60%;
+  font-size: 1.2em;
+}
+
+.movie-image {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+
+.poster {
+  width: 250px;
+  float: right;
+  padding-right: 30px;
+}
+
+.image1 {
   margin-top: 50px;
   border: 1px solid;
- }
+  margin-right: 10px;
+}
 
+.title {
+  color: #ce9a56;
+  font-weight: 900;
+}
 
-.title{color: #ce9a56; font-weight: 900;}
+.span1, .span2 {
+  color: #e5ceb3;
+}
 
-.span1{color: #e5ceb3;}
-.span2{color: #e5ceb3;}
+.overview {
+  color: #845a29;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-.overview{color: #845a29;
-font-weight: bold;
-text-decoration: underline;
+.divLeft {
+  text-align: left;
+}
+
+.divRight {
+  padding-top: 26px;
+  text-align: left;
+  width: 700px;
+  padding-right: 50px;
+  margin-right: 100px;
+}
+
+.giffy {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.giffy img {
+  display: inline-block;
+  width: 24%;
+  height: 130px;
+  /* border-radius: 50%; */
+  width: 130px;
+  margin-left: 10px;
+}
+
+.try {
+  color: #3a2104;
 }
